@@ -11,21 +11,19 @@ const pool = new Pool({
     ssl: { rejectUnauthorized: false }
 });
 
-console.log("tester");
-
-//Set the client as Pool
+## Set the client as Pool
 db.setClient(pool);
 
 (async function() {
 
-    // example insert
+## example insert
     await db.insert('users', {
         'id': 100,
         'firstname': 'john',
         'lastname': 'smith'
     })
 
-    //select all the rows in a table
+## select all the rows in a table
     let rows = await db.selectAllRows("users");
 
     rows.forEach(row => {
