@@ -1,0 +1,19 @@
+{
+  "name": "node-pg-helper",
+  "version": "1.0.0",
+  "description": "postgres database helper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wherrera/node-pg-helper.git"
+  },
+  "keywords": [
+    "nodejs",
+    "postgres"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wherrera",
+  "license": "MIT"
+}
