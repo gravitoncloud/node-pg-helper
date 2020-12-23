@@ -31,7 +31,7 @@ await db.insert('users', {
 
 ## example upsert
 ```javascript
-await db.Upsert('users', {
+await db.upsert('users', {
     'id': 100,
     'firstname': 'john',
     'lastname': 'snow'
