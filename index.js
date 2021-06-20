@@ -21,8 +21,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-var _client = null;
-const db = {
+const { Pool } = require('pg');
+
+var _client = null; 
+
+if(process.env.DATABASE_URL) {
+    _client = new Pool({
+        connectionString: process.env.DATABASE_URL,
+        ssl: { rejectUnauthorized: false }
+    });
+}
+
+module.exports = {
     setClient : function (postgresClient) {
         _client = postgresClient;
     },
@@ -156,4 +166,3 @@ const db = {
         return result.rows;
     },
 };
-module.exports = db;
