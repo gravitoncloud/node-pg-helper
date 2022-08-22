@@ -1,6 +1,6 @@
 {
   "name": "node-pg-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "postgres database helper",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/spec.js"
   },
   "author": "wherrera",
   "license": "MIT",
