@@ -98,7 +98,7 @@ module.exports = {
             update += keys[i] + "=$" + (i+1);
             vals.push(values[i]);
         }
-        return await client.query({
+        return await _query({
             text : `INSERT into ${tableName} (${names}) VALUES(${numbs}) ON CONFLICT (${conflict}) DO UPDATE SET ${update}`,
             values: vals
         });
