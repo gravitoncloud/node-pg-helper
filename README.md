@@ -1,6 +1,8 @@
 # node-pg-helper
 common helper functions for node-postgres
 
+[![Node.js Package](https://github.com/wherrera/node-pg-helper/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/wherrera/node-pg-helper/actions/workflows/npm-publish.yml)
+
 # Examples
 
 ### Setup postgres connection
